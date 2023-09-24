@@ -3,7 +3,7 @@ export default [
         title: 'Transit Route Optimization using Uber/Lyft Data',
         domain: 'Machine Learning, Optimization',
         date: 'February 2023',
-        img_Url: '/assets/uber.JPG',
+        img_Url: 'src/assets/uber.JPG',
         stack: ['Python','Keras','Pandas'],
         link: 'https://github.com/abhawsar10/Machine-Learning-Projects/tree/main/Transit%20Route%20Optimization',
         details: ["Optimizing routing of transit services in and around the greater Boston Area using various machine learning models.","The project began with processing the data from rideshare records from Uber and Lyft.","Machine learning models included demand forecasting using ARIMA and SARIMAX and XGBoost.","Performed customer segmentation using K-means clustering to determine city hotspots.","Used Gurobi Optimization on UFLP model to plan efficient city transit routes."]
@@ -12,7 +12,7 @@ export default [
         title: 'Case Study: Profit Optimization for Real Estate Construction',
         domain: 'Operations Research',
         date: 'November 2022',
-        img_Url: '/assets/milp.jpg',
+        img_Url: 'src/assets/milp.jpg',
         stack: ['Gurobi','AMPL'],
         link: 'https://github.com/abhawsar10/Optimization-Analytics/tree/main/Case%20Study%201',
         details: ["Mixed Integer Linear Programming Project to maximize profit for Lake Saddleback Development Corporation on 300 acres of land.","The problem involved dozens of variables and conditions to consider before optimizing for profit.","Formulated the problem and ran it in AMPL to optimize the number and types of various floor plans that can be constructed.","Conducted sensitivity analysis and presented a detailed report on how modifying each constraint and variable would affect the profits."]
@@ -21,7 +21,7 @@ export default [
         title: 'Yelp Business Closure Predictions ',
         domain: 'Machine Learning',
         date: 'November 2022',
-        img_Url: '/assets/yelp.jpg',
+        img_Url: 'src/assets/yelp.jpg',
         stack: ['Python','Scikit-learn','Pandas'],
         link: 'https://github.com/abhawsar10/Machine-Learning-Projects/tree/main/Yelp%20Business%20Prediction',
         details: ["Developed a project to predict whether a given business listed on Yelp will close or continue operations in the coming years using Python, SciKit, and TensorFlow.","Utilized a publicly available dataset with approximately 150,000 observations.","Employed Natural Language Processing for Sentiment Analysis on business reviews.","Ran multiple machine learning models on the data, including Logistic Regression, LDA, CART, Random Forest, and Neural Networks, achieving an average accuracy of approximately 82% on the testing dataset.","Enhanced models using boosting techniques such as AdaBoost, XGBoost, and CatBoost, resulting in an average improvement of approximately 2%."]
@@ -30,7 +30,7 @@ export default [
         title: 'Indexing Fox News Webpages using Solr',
         domain: 'Information Retrieval',
         date: 'March 2022',
-        img_Url: '/assets/fox.JPG',
+        img_Url: 'src/assets/fox.JPG',
         stack: ['Solr','Lucene','PHP'],
         link: 'https://github.com/abhawsar10/Information-Retrieval/tree/main/Indexing%20using%20Solr',
         details: ["Configured the Apache Solr server to index a set of 50,000 Fox News HTML webpages and enabled HTTPS requests to the server.","Implemented the PageRank algorithm using the networkx library to calculate ranks for all webpages.","Developed a front-end PHP search engine client to allow users to submit queries to both the PageRank and Lucene algorithms.","Discovered an average overlap of 6% in the results of ranking strategies used by Lucene and Google, indicating differences in techniques."]
@@ -39,7 +39,7 @@ export default [
         title: 'Semantic Segmentation using Modified Fully Convolutional Networks',
         domain: 'Computer Vision',
         date: 'November 2021',
-        img_Url: '/assets/semseg.png',
+        img_Url: 'src/assets/semseg.png',
         stack: ['Python','OpenCV','Google Colab'],
         link: 'https://github.com/abhawsar10/Computer-Vision/tree/main/Semantic%20Segmentation%20using%20FCN',
         details: ["Conducted research under Prof. Ram Nevatia, Director of IRIS Lab at USC, as part of a group of 3 PhD students.","Utilized a modified version of FCN32 and FCN16 with a ResNet-18 backbone for semantic segmentation of traffic dash cam images into 10 categories.","Trained the model on the Kitti Vision dataset, which consists of images captured from vehicles driving in busy traffic conditions.","Achieved a Mean Pixel-Level Intersection-over-Union (IoU) of 0.21, indicating the model's performance in semantic segmentation."]
@@ -48,7 +48,7 @@ export default [
         title: 'Object Classification using Modified LeNet5',
         domain: 'Computer Vision',
         date: 'October 2021',
-        img_Url: '/assets/lenet.png',
+        img_Url: 'src/assets/lenet.png',
         stack: ['Python','PyTorch','Google Colab'],
         link: 'https://github.com/abhawsar10/Computer-Vision/tree/3b0668ae1477f1e5fe3b1a4b1105a6fd1dfc1cab/LeNet%205%20Implementation',
         details: ["Constructed a LeNet-5 style Convolutional Neural Network (Modified from the 1998 paper), using PyTorch functions.","Used STL-10 Dataset for training containing 5000 96x96 RGB images","Conducted 2 Experiments with variantions: first with L2 Regularization, second with Batch Normalization","Experiments with Regularization showed a decrease in both Training and Testing Accuracies."]
@@ -57,7 +57,7 @@ export default [
         title: 'Object Detection using SIFT Descriptors',
         domain: 'Computer Vision',
         date: 'October 2021',
-        img_Url: '/assets/sift.jpg',
+        img_Url: 'src/assets/sift.jpg',
         stack: ['Python','OpenCV','Google Colab'],
         link: 'https://github.com/abhawsar10/Computer-Vision/tree/3b0668ae1477f1e5fe3b1a4b1105a6fd1dfc1cab/Object%20Detection%20using%20SIFT%20Descriptors',
         details: ["Created and computed Scale Invariant Feature Transform (SIFT) descriptors for a dataset of images containing specific objects (books), which were used to estimate the homography matrix.","Applied a brute-force matcher to detect specific objects (books) within complex still life images."]
