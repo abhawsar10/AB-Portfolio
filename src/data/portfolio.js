@@ -3,7 +3,7 @@ export default [
         title: 'Transit Route Optimization using Uber/Lyft Data',
         domain: 'Machine Learning, Optimization',
         date: 'February 2023',
-        img_Url: '/assets/uber.JPG',
+        img_Url: '/ANB-Portfolio/assets/uber.JPG',
         stack: ['Python','Keras','Pandas'],
         link: 'https://github.com/abhawsar10/Machine-Learning-Projects/tree/main/Transit%20Route%20Optimization',
         details: ["Optimizing routing of transit services in and around the greater Boston Area using various machine learning models.","The project began with processing the data from rideshare records from Uber and Lyft.","Machine learning models included demand forecasting using ARIMA and SARIMAX and XGBoost.","Performed customer segmentation using K-means clustering to determine city hotspots.","Used Gurobi Optimization on UFLP model to plan efficient city transit routes."]
@@ -12,7 +12,7 @@ export default [
         title: 'Case Study: Profit Optimization for Real Estate Construction',
         domain: 'Operations Research',
         date: 'November 2022',
-        img_Url: '/assets/milp.jpg',
+        img_Url: '/ANB-Portfolio/assets/milp.jpg',
         stack: ['Gurobi','AMPL'],
         link: 'https://github.com/abhawsar10/Optimization-Analytics/tree/main/Case%20Study%201',
         details: ["Mixed Integer Linear Programming Project to maximize profit for Lake Saddleback Development Corporation on 300 acres of land.","The problem involved dozens of variables and conditions to consider before optimizing for profit.","Formulated the problem and ran it in AMPL to optimize the number and types of various floor plans that can be constructed.","Conducted sensitivity analysis and presented a detailed report on how modifying each constraint and variable would affect the profits."]
@@ -21,7 +21,7 @@ export default [
         title: 'Yelp Business Closure Predictions ',
         domain: 'Machine Learning',
         date: 'November 2022',
-        img_Url: '/assets/yelp.jpg',
+        img_Url: './assets/yelp.jpg',
         stack: ['Python','Scikit-learn','Pandas'],
         link: 'https://github.com/abhawsar10/Machine-Learning-Projects/tree/main/Yelp%20Business%20Prediction',
         details: ["Developed a project to predict whether a given business listed on Yelp will close or continue operations in the coming years using Python, SciKit, and TensorFlow.","Utilized a publicly available dataset with approximately 150,000 observations.","Employed Natural Language Processing for Sentiment Analysis on business reviews.","Ran multiple machine learning models on the data, including Logistic Regression, LDA, CART, Random Forest, and Neural Networks, achieving an average accuracy of approximately 82% on the testing dataset.","Enhanced models using boosting techniques such as AdaBoost, XGBoost, and CatBoost, resulting in an average improvement of approximately 2%."]
