@@ -48,7 +48,7 @@ export default [
         title: 'Object Classification using Modified LeNet5',
         domain: 'Computer Vision',
         date: 'October 2021',
-        img_Url: 'src/assets/lenet.png',
+        img_Url: './src/assets/lenet.png',
         stack: ['Python','PyTorch','Google Colab'],
         link: 'https://github.com/abhawsar10/Computer-Vision/tree/3b0668ae1477f1e5fe3b1a4b1105a6fd1dfc1cab/LeNet%205%20Implementation',
         details: ["Constructed a LeNet-5 style Convolutional Neural Network (Modified from the 1998 paper), using PyTorch functions.","Used STL-10 Dataset for training containing 5000 96x96 RGB images","Conducted 2 Experiments with variantions: first with L2 Regularization, second with Batch Normalization","Experiments with Regularization showed a decrease in both Training and Testing Accuracies."]
