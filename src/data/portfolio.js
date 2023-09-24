@@ -30,7 +30,7 @@ export default [
         title: 'Indexing Fox News Webpages using Solr',
         domain: 'Information Retrieval',
         date: 'March 2022',
-        img_Url: '/assets/fox.JPG',
+        img_Url: './assets/fox.JPG',
         stack: ['Solr','Lucene','PHP'],
         link: 'https://github.com/abhawsar10/Information-Retrieval/tree/main/Indexing%20using%20Solr',
         details: ["Configured the Apache Solr server to index a set of 50,000 Fox News HTML webpages and enabled HTTPS requests to the server.","Implemented the PageRank algorithm using the networkx library to calculate ranks for all webpages.","Developed a front-end PHP search engine client to allow users to submit queries to both the PageRank and Lucene algorithms.","Discovered an average overlap of 6% in the results of ranking strategies used by Lucene and Google, indicating differences in techniques."]
