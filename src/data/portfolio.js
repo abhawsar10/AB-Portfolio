@@ -3,7 +3,7 @@ export default [
         title: 'Transit Route Optimization using Uber/Lyft Data',
         domain: 'Machine Learning, Optimization',
         date: 'February 2023',
-        img_Url: '/assets/uber.JPG',
+        img_Url: 'public/assets/uber.JPG',
         stack: ['Python','Keras','Pandas'],
         link: 'https://github.com/abhawsar10/Machine-Learning-Projects/tree/main/Transit%20Route%20Optimization',
         details: ["Optimizing routing of transit services in and around the greater Boston Area using various machine learning models.","The project began with processing the data from rideshare records from Uber and Lyft.","Machine learning models included demand forecasting using ARIMA and SARIMAX and XGBoost.","Performed customer segmentation using K-means clustering to determine city hotspots.","Used Gurobi Optimization on UFLP model to plan efficient city transit routes."]
