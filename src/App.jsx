@@ -79,7 +79,7 @@ function App() {
           <Intro/>
           <Timeline theme={theme}/>
           <Portfolio/>
-          <Contact/>
+          <Contact id="contactesh"/>
           <Footer/>
         </div>
       </div>
