@@ -30,7 +30,7 @@ function Intro(){
 
     return(
         <div className="flex items-center justify-center flex-col text-center pt-20 pb-12 h-screen relative">
-            <div className="text-7xl sm:text-5 mb-1 md:mb-3 font-bold dark:text-white">Ankit Bhawsar</div>
+            <div className="text-5xl md:text-7xl mb-1 md:mb-3 font-bold dark:text-white">Ankit Bhawsar</div>
             <p className="text-base md:text-xl mb-3 font-medium">Full Stack Software Developer</p>
             <p className="text-sm max-w-xl mb-6 font-bold">
                 I'm a software engineer with a strong foundation in web technologies and a 
