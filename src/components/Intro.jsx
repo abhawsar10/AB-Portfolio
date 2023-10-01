@@ -54,7 +54,7 @@ function Intro(){
                     </Link>
                 </span>
             </div>
-            <div className="absolute bottom-16 mb-16 text-2xl md:text-xl animate-bounce cursor-pointer">
+            <div className="absolute bottom-16 mb-16 text-2xl hover:text-3xl transition-all duration-200 ease-linear md:text-xl animate-bounce cursor-pointer">
                 <Link to="timelinesh" activeClass="active" spy={true} smooth={true} >
                     {darrow}
                 </Link>
