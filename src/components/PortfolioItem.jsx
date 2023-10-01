@@ -10,9 +10,9 @@ function PortfolioItem({title,img_Url,stack, link,details,isExpanded,onClick}){
         <svg 
             xmlns="http://www.w3.org/2000/svg" 
             fill="none" viewBox="0 0 24 24" 
-            stroke-width="1.5" 
+            stroke-width="2.5" 
             stroke="currentColor" 
-            class="w-6 h-6"
+            class="w-full h-full stroke-white dark:stroke-black hover:stroke-red-500 hover:dark:stroke-yellow-500 transition-all duration-200 ease-linear"
         >
         <path 
             stroke-linecap="round" 
@@ -27,14 +27,18 @@ function PortfolioItem({title,img_Url,stack, link,details,isExpanded,onClick}){
 
         <div
             onClick={onClick}
-            className={`border-2 border-stone-900 dark:border-white rounded-md overflow-hidden transition-all ${
-                isExpanded ? "col-span-2" : ""
-              }`}
+            className={`border-4 border-stone-900 dark:border-white rounded-md overflow-hidden transition-all
+                ${isExpanded ? "col-span-2" : ""}
+                ${isExpanded ? "cursor-zoom-out" : "cursor-zoom-in"}
+              hover:border-pink-500 
+              dark:hover:border-yellow-500 
+              cursor-pointer
+              transition-all duration-200 ease-linear`}
         >
             <img 
                 src ={img_Url} 
                 alt="portfolio_item_image" 
-                className="w-full h-36 md:h-48 object-cover cursor-pointer"
+                className="w-full h-36 md:h-48 object-cover"
             />
             <div className="w-full p-4">
                 <h3 className="text-lg md:text-xl dark:text-white mb-2 md:mb-3 font-semibold">{title}</h3>
@@ -56,7 +60,10 @@ function PortfolioItem({title,img_Url,stack, link,details,isExpanded,onClick}){
                             </ul>
                         </div>
                             <a href={link} target="_blank">
-                                <div className="flex justify-center items-center w-full px-1 py-2 mt-4 mb-0 rounded-md font-bold text-white bg-gradient-to-r from-green-500 to-yellow-500 hover:bg-blue-900">
+                                <div className="flex justify-center items-center w-full px-1 py-2 mt-4 mb-0 rounded-md font-bold text-white 
+                                    bg-gradient-to-r from-yellow-500 to-pink-500 
+                                    transition-all duration-300 h-10
+                                 ">
                                     {link_icon}
                                 </div>
                             </a>
