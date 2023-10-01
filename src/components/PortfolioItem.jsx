@@ -10,9 +10,9 @@ function PortfolioItem({title,img_Url,stack, link,details,isExpanded,onClick}){
         <svg 
             xmlns="http://www.w3.org/2000/svg" 
             fill="none" viewBox="0 0 24 24" 
-            stroke-width="2.5" 
+            stroke-width="2" 
             stroke="currentColor" 
-            class="w-full h-full stroke-white dark:stroke-black hover:stroke-red-500 hover:dark:stroke-yellow-500 transition-all duration-200 ease-linear"
+            className="w-full h-full stroke-white dark:stroke-black hover:stroke-black hover:dark:stroke-white transition-all duration-200 ease-linear"
         >
         <path 
             stroke-linecap="round" 
@@ -27,7 +27,7 @@ function PortfolioItem({title,img_Url,stack, link,details,isExpanded,onClick}){
 
         <div
             onClick={onClick}
-            className={`border-4 border-stone-900 dark:border-white rounded-md overflow-hidden transition-all
+            className={`border-2 border-stone-600 dark:border-stone-500 rounded-md overflow-hidden transition-all
                 ${isExpanded ? "col-span-2" : ""}
                 ${isExpanded ? "cursor-zoom-out" : "cursor-zoom-in"}
               hover:border-pink-500 
