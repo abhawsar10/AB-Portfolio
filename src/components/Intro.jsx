@@ -38,10 +38,18 @@ function Intro(){
                 Open to explore compelling full-time career prospects that align with my interests.
             </p>
             <div className="flex">
-                <span className="text-3xl dark:text-white mx-5"><a href="https://github.com/abhawsar10" target="_black">{gh}</a></span>
-                <span className="text-3xl dark:text-white mx-5"><a href="https://www.linkedin.com/in/ankitbhawsar/" target="_black">{linkedin}</a></span>
-                <span className="text-3xl dark:text-white mx-5 cursor-pointer">
-                    <Link to="contactesh" activeClass="active" spy={true} smooth={true} >
+                <span className="intro-icon ">
+                    <a href="https://github.com/abhawsar10" className="flex items-center justify-center h-full w-full" target="_black">
+                        {gh}
+                    </a>
+                </span>
+                <span className="intro-icon ">
+                    <a href="https://www.linkedin.com/in/ankitbhawsar/" className="flex items-center justify-center h-full w-full"  target="_black">
+                        {linkedin}
+                    </a>
+                </span>
+                <span className="intro-icon ">
+                    <Link to="contactesh" activeClass="active" spy={true} smooth={true} className="flex items-center justify-center h-full w-full" >
                         {email}
                     </Link>
                 </span>
