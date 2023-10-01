@@ -1,5 +1,4 @@
-import React from "react";
-// import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
+import React,{useState,useEffect} from "react";
 import { Link } from "react-scroll";
 
 function Intro(){
@@ -23,28 +22,69 @@ function Intro(){
     );
 
     const darrow = (
-        <svg className="dark:fill-white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+        <svg className="dark:fill-white hover:scale-150 transition-all ease-in-out duration-200" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
             <path d="M169.4 502.6c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 402.7 224 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 370.7L86.6 329.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128z"/>
         </svg>
     );
 
+    const [opacity1, setOpacity1] = useState(0);
+    console.log(opacity1)
+    const [opacity2, setOpacity2] = useState(0);
+    const [opacity3, setOpacity3] = useState(0);
+    const [opacity4, setOpacity4] = useState(0);
+    const [opacity5, setOpacity5] = useState(0);
+
+    useEffect(() => {
+        
+        const timer1 = setTimeout(() => {
+            setOpacity1(1);
+        }, 1000);
+        
+        const timer2 = setTimeout(() => {
+            setOpacity2(1);
+        }, 2000);
+
+        const timer3 = setTimeout(() => {
+            setOpacity3(1);
+        }, 3000);
+
+        const timer4 = setTimeout(() => {
+            setOpacity4(1);
+        }, 4000);
+
+        const timer5 = setTimeout(() => {
+            setOpacity5(1);
+        }, 5000);
+
+    }, []);
+
+
+
     return(
-        <div className="flex items-center justify-center flex-col text-center pt-20 pb-12 h-screen relative">
-            <div className="text-5xl md:text-7xl mb-1 md:mb-3 font-bold dark:text-white">Ankit Bhawsar</div>
-            <p className="text-base md:text-xl mb-3 font-medium">Full Stack Software Developer</p>
-            <p className="text-sm max-w-xl mb-6 font-bold">
-                I'm a software engineer with a strong foundation in web technologies and a 
-                deep enthusiasm for machine learning, computer vision, backend development, and data analytics.<br/>
-                Open to explore compelling full-time career prospects that align with my interests.
+        <div className={`flex items-center justify-center flex-col text-center pt-20 pb-12 h-screen relative cursor-default`}>
+            <div className={`text-5xl md:text-7xl mb-1 md:mb-3 font-bold dark:text-white opacity-${opacity1} transition-opacity ease-in-out duration-1000`}>Ankit Bhawsar</div>
+            <p className={`text-base md:text-xl mb-3 font-medium opacity-${opacity2} transition-opacity ease-in-out duration-1000`}>Full Stack Software Developer</p>
+            <p className={` text-sm max-w-2xl mb-6 font-bold  opacity-${opacity3} transition-opacity ease-in-out duration-1000`}>
+                I'm a software engineer with a strong foundation in web technologies 
+                <br/>and a deep enthusiasm for &nbsp;
+
+                <span className="hover:text-blue-500 transition-all ease-in-out duration-500">Machine Learning</span>,&nbsp;
+                <span className="hover:text-yellow-500 transition-all ease-in-out duration-500">Computer Vision </span>, and&nbsp;
+                <span className="hover:text-green-500 transition-all ease-in-out duration-500">Data Analytics</span>.
+
+                <br/><br/>
+                <div className={`flex opacity-${opacity4} transition-opacity ease-in-out duration-1000`}>
+                    Open to explore compelling full-time career prospects that align with my interests.
+                </div>
             </p>
-            <div className="flex">
+            <div className={`flex opacity-${opacity5} transition-opacity ease-in-out duration-1000`}>
                 <span className="intro-icon ">
-                    <a href="https://github.com/abhawsar10" className="flex items-center justify-center h-full w-full" target="_black">
+                    <a href="https://github.com/abhawsar10" className="flex items-center justify-center h-full w-full" target="_blank">
                         {gh}
                     </a>
                 </span>
                 <span className="intro-icon ">
-                    <a href="https://www.linkedin.com/in/ankitbhawsar/" className="flex items-center justify-center h-full w-full"  target="_black">
+                    <a href="https://www.linkedin.com/in/ankitbhawsar/" className="flex items-center justify-center h-full w-full"  target="_blank">
                         {linkedin}
                     </a>
                 </span>
@@ -54,10 +94,12 @@ function Intro(){
                     </Link>
                 </span>
             </div>
-            <div className="absolute bottom-16 mb-16 text-2xl hover:text-3xl transition-all duration-200 ease-linear md:text-xl animate-bounce cursor-pointer">
-                <Link to="timelinesh" activeClass="active" spy={true} smooth={true} >
-                    {darrow}
-                </Link>
+            <div className={`opacity-${opacity5} transition-opacity ease-in-out duration-1000`}>
+                <div className="absolute bottom-16 mb-16 text-2xl md:text-xl animate-bounce cursor-pointer">
+                    <Link to="timelinesh" activeClass="active" spy={true} smooth={true} >
+                        {darrow}
+                    </Link>
+                </div>
             </div>
         </div>
     )
