@@ -73,9 +73,9 @@ function Intro(){
                 <span className="hover:text-green-500 transition-all ease-in-out duration-500">Data Analytics</span>.
 
                 <br/><br/>
-                <div className={`flex opacity-${opacity4} transition-opacity ease-in-out duration-1000`}>
+                <span className={`flex opacity-${opacity4} transition-opacity ease-in-out duration-1000`}>
                     Open to explore compelling full-time career prospects that align with my interests.
-                </div>
+                </span>
             </p>
             <div className={`flex opacity-${opacity5} transition-opacity ease-in-out duration-1000`}>
                 <span className="intro-icon ">
