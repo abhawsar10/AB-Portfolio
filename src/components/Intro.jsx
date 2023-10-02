@@ -94,6 +94,13 @@ function Intro(){
                     </Link>
                 </span>
             </div>
+            <div className={`flex opacity-${opacity5}  transition-opacity ease-in-out duration-1000`}>
+                <a href="./assets/Ankit_Bhawsar_CV_8_6__SDE_.pdf" download="Ankit_Bhawsar_CV.pdf" className="flex items-center justify-center h-full w-full" target="_blank">
+                    <div className="px-3 py-1 my-5 rounded-xl hover:scale-110 transition-all ease-in-out duration-200 text-sm  bg-black text-stone-100 dark:bg-white dark:text-black">
+                            RESUME
+                    </div>
+                </a>
+            </div>
             <div className={`opacity-${opacity5} transition-opacity ease-in-out duration-1000`}>
                 <div className="absolute bottom-16 mb-16 text-2xl md:text-xl animate-bounce cursor-pointer">
                     <Link to="timelinesh" activeClass="active" spy={true} smooth={true} >
