@@ -3,6 +3,33 @@ import { Link } from "react-scroll";
 
 function Intro(){
 
+    const pdf_icon = (
+        <svg version="1.1" id="Capa_1" height="1em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+            viewBox="0 0 482.14 482.14" xml:space="preserve"
+            className="fill-black  dark:fill-white"
+
+            >
+            <g>
+                <path d="M142.024,310.194c0-8.007-5.556-12.782-15.359-12.782c-4.003,0-6.714,0.395-8.132,0.773v25.69
+                    c1.679,0.378,3.743,0.504,6.588,0.504C135.57,324.379,142.024,319.1,142.024,310.194z"/>
+                <path d="M202.709,297.681c-4.39,0-7.227,0.379-8.905,0.772v56.896c1.679,0.394,4.39,0.394,6.841,0.394
+                    c17.809,0.126,29.424-9.677,29.424-30.449C230.195,307.231,219.611,297.681,202.709,297.681z"/>
+                <path d="M315.458,0H121.811c-28.29,0-51.315,23.041-51.315,51.315v189.754h-5.012c-11.418,0-20.678,9.251-20.678,20.679v125.404
+                    c0,11.427,9.259,20.677,20.678,20.677h5.012v22.995c0,28.305,23.025,51.315,51.315,51.315h264.223
+                    c28.272,0,51.3-23.011,51.3-51.315V121.449L315.458,0z M99.053,284.379c6.06-1.024,14.578-1.796,26.579-1.796
+                    c12.128,0,20.772,2.315,26.58,6.965c5.548,4.382,9.292,11.615,9.292,20.127c0,8.51-2.837,15.745-7.999,20.646
+                    c-6.714,6.32-16.643,9.157-28.258,9.157c-2.585,0-4.902-0.128-6.714-0.379v31.096H99.053V284.379z M386.034,450.713H121.811
+                    c-10.954,0-19.874-8.92-19.874-19.889v-22.995h246.31c11.42,0,20.679-9.25,20.679-20.677V261.748
+                    c0-11.428-9.259-20.679-20.679-20.679h-246.31V51.315c0-10.938,8.921-19.858,19.874-19.858l181.89-0.19v67.233
+                    c0,19.638,15.934,35.587,35.587,35.587l65.862-0.189l0.741,296.925C405.891,441.793,396.987,450.713,386.034,450.713z
+                    M174.065,369.801v-85.422c7.225-1.15,16.642-1.796,26.58-1.796c16.516,0,27.226,2.963,35.618,9.282
+                    c9.031,6.714,14.704,17.416,14.704,32.781c0,16.643-6.06,28.133-14.453,35.224c-9.157,7.612-23.096,11.222-40.125,11.222
+                    C186.191,371.092,178.966,370.446,174.065,369.801z M314.892,319.226v15.996h-31.23v34.973h-19.74v-86.966h53.16v16.122h-33.42
+                    v19.875H314.892z"/>
+            </g>
+        </svg>
+    );
+
     const gh = (
         <svg className="dark:fill-white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512">
             <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
@@ -28,7 +55,6 @@ function Intro(){
     );
 
     const [opacity1, setOpacity1] = useState(0);
-    console.log(opacity1)
     const [opacity2, setOpacity2] = useState(0);
     const [opacity3, setOpacity3] = useState(0);
     const [opacity4, setOpacity4] = useState(0);
@@ -78,28 +104,46 @@ function Intro(){
                 </span>
             </p>
             <div className={`flex opacity-${opacity5} transition-opacity ease-in-out duration-1000`}>
-                <span className="intro-icon ">
-                    <a href="https://github.com/abhawsar10" className="flex items-center justify-center h-full w-full" target="_blank">
-                        {gh}
-                    </a>
-                </span>
-                <span className="intro-icon ">
-                    <a href="https://www.linkedin.com/in/ankitbhawsar/" className="flex items-center justify-center h-full w-full"  target="_blank">
-                        {linkedin}
-                    </a>
-                </span>
-                <span className="intro-icon ">
-                    <Link to="contactesh" activeClass="active" spy={true} smooth={true} className="flex items-center justify-center h-full w-full" >
-                        {email}
-                    </Link>
-                </span>
-            </div>
-            <div className={`flex opacity-${opacity5}  transition-opacity ease-in-out duration-1000`}>
-                <a href="./assets/Ankit_Bhawsar_CV_8_6__SDE_.pdf" download="Ankit_Bhawsar_CV.pdf" className="flex items-center justify-center h-full w-full" target="_blank">
-                    <div className="px-3 py-1 my-5 rounded-xl hover:scale-110 transition-all ease-in-out duration-200 text-sm  bg-black text-stone-100 dark:bg-white dark:text-black">
-                            RESUME
+                <div className="group h-10">
+                    <div className="intro-icon">
+                        <a href="https://github.com/abhawsar10" className="flex items-center justify-center h-full w-full" target="_blank">
+                            {gh}
+                        </a>
                     </div>
-                </a>
+                    <div className="tooltip group-hover:scale-75 transition-all duration-200 ease-linear">
+                        GitHub
+                    </div>
+                </div>
+                <div className="group h-10">
+                    <div className="intro-icon ">
+                        <a href="https://www.linkedin.com/in/ankitbhawsar/" className="flex items-center justify-center h-full w-full"  target="_blank">
+                            {linkedin}
+                        </a>
+                    </div>
+                    <div className="tooltip group-hover:scale-75 transition-all duration-200 ease-linear">
+                        LinkedIn
+                    </div>
+                </div>
+                <div className="group h-10">
+                    <div className="intro-icon ">
+                        <Link to="contactesh" activeClass="active" spy={true} smooth={true} className="flex items-center justify-center h-full w-full" >
+                            {email}
+                        </Link>
+                    </div>
+                    <div className="tooltip group-hover:scale-75 transition-all duration-200 ease-linear">
+                        Email Me
+                    </div>
+                </div>
+                <div className="group h-10">
+                    <div className="intro-icon ">
+                        <a href="./assets/Ankit_Bhawsar_CV_8_6__SDE_.pdf" download="Ankit_Bhawsar_CV.pdf" className="flex items-center justify-center h-full w-full" target="_blank">
+                            {pdf_icon}
+                        </a>
+                    </div>
+                    <div className="tooltip group-hover:scale-75 transition-all duration-200 ease-linear">
+                        Resume
+                    </div>
+                </div>
             </div>
             <div className={`opacity-${opacity5} transition-opacity ease-in-out duration-1000`}>
                 <div className="absolute bottom-16 mb-16 text-2xl md:text-xl animate-bounce cursor-pointer">

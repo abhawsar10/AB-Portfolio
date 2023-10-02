@@ -18,4 +18,13 @@
             
     }
 
+    .tooltip{
+        @apply
+            w-auto p-1 my-4 m-2 min-w-max left-10
+            rounded-md shadow-md
+            text-gray-300 bg-gray-700
+            dark:text-gray-700 dark:bg-gray-300
+            text-xs font-bold scale-0
+    }
+
 }
