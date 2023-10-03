@@ -4,8 +4,8 @@ import { Link } from "react-scroll";
 function Intro(){
 
     const pdf_icon = (
-        <svg version="1.1" id="Capa_1" height="1em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-            viewBox="0 0 482.14 482.14" xml:space="preserve"
+        <svg version="1.1" id="Capa_1" height="1em"
+            viewBox="0 0 482.14 482.14"
             className="fill-black  dark:fill-white"
 
             >
@@ -88,15 +88,17 @@ function Intro(){
 
     return(
         <div className={`flex items-center justify-center flex-col text-center pt-20 pb-12 h-screen relative cursor-default`}>
-            <div className={`text-5xl md:text-7xl mb-1 md:mb-3 font-bold dark:text-white opacity-${opacity1} transition-opacity ease-in-out duration-1000`}>Ankit Bhawsar</div>
+            
+            <div className={`fade text-5xl md:text-7xl mb-1 md:mb-3 font-bold dark:text-white opacity-${opacity1} transition-opacity ease-in-out duration-1000 font-inter`}>Ankit Bhawsar</div>
+        
             <p className={`text-base md:text-xl mb-3 font-medium opacity-${opacity2} transition-opacity ease-in-out duration-1000`}>Full Stack Software Developer</p>
             <p className={` text-sm max-w-2xl mb-6 font-bold  opacity-${opacity3} transition-opacity ease-in-out duration-1000`}>
                 I'm a software engineer with a strong foundation in web technologies 
                 <br/>and a deep enthusiasm for &nbsp;
 
-                <span className="hover:text-blue-500 transition-all ease-in-out duration-500">Machine Learning</span>,&nbsp;
-                <span className="hover:text-yellow-500 transition-all ease-in-out duration-500">Computer Vision </span>, and&nbsp;
-                <span className="hover:text-green-500 transition-all ease-in-out duration-500">Data Analytics</span>.
+                <span className="hover:text-blue-500 transition-all ease-in-out duration-200">Machine Learning</span>,&nbsp;
+                <span className="hover:text-yellow-500 transition-all ease-in-out duration-200">Computer Vision </span>, and&nbsp;
+                <span className="hover:text-green-500 transition-all ease-in-out duration-200">Data Analytics</span>.
 
                 <br/><br/>
                 <span className={`flex opacity-${opacity4} transition-opacity ease-in-out duration-1000`}>
@@ -110,7 +112,7 @@ function Intro(){
                             {gh}
                         </a>
                     </div>
-                    <div className="tooltip group-hover:scale-75 transition-all duration-200 ease-linear">
+                    <div className="tooltip group-hover:scale-100 transition-all duration-200 ease-linear">
                         GitHub
                     </div>
                 </div>
@@ -120,7 +122,7 @@ function Intro(){
                             {linkedin}
                         </a>
                     </div>
-                    <div className="tooltip group-hover:scale-75 transition-all duration-200 ease-linear">
+                    <div className="tooltip group-hover:scale-100 transition-all duration-200 ease-linear">
                         LinkedIn
                     </div>
                 </div>
@@ -130,7 +132,7 @@ function Intro(){
                             {email}
                         </Link>
                     </div>
-                    <div className="tooltip group-hover:scale-75 transition-all duration-200 ease-linear">
+                    <div className="tooltip group-hover:scale-100 transition-all duration-200 ease-linear">
                         Email Me
                     </div>
                 </div>
@@ -140,7 +142,7 @@ function Intro(){
                             {pdf_icon}
                         </a>
                     </div>
-                    <div className="tooltip group-hover:scale-75 transition-all duration-200 ease-linear">
+                    <div className="tooltip group-hover:scale-100 transition-all duration-200 ease-linear">
                         Resume
                     </div>
                 </div>
