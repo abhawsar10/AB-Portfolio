@@ -11,7 +11,7 @@ function Intro(){
 
 
     const gh = (
-        <svg className={`${timer4 ? 'fill-black dark:fill-white' : 'fill-transparent'} transition-all ease-in-out duration-1000`} 
+        <svg className={`${timer4 ? 'fill-black dark:fill-white' : 'fill-transparent'} hover:scale-150 transition-color ease-in-out duration-300`} 
             height="1em" 
             viewBox="0 0 496 512"
             >
@@ -20,7 +20,7 @@ function Intro(){
     );
 
     const linkedin = (
-        <svg className={`${timer4 ? 'fill-black dark:fill-white' : 'fill-transparent'} transition-all ease-in-out duration-1000`} 
+        <svg className={`${timer4 ? 'fill-black dark:fill-white' : 'fill-transparent'} hover:scale-150 transition-all ease-in-out duration-300`} 
             height="1em" 
             viewBox="0 0 448 512"
             >
@@ -29,7 +29,7 @@ function Intro(){
     );
 
     const email = (
-        <svg className={`${timer4 ? 'fill-black dark:fill-white' : 'fill-transparent'} transition-all ease-in-out duration-1000`} 
+        <svg className={`${timer4 ? 'fill-black dark:fill-white' : 'fill-transparent'} hover:scale-150 transition-all ease-in-out duration-300`} 
             height="1em" 
             viewBox="0 0 512 512"
             >
@@ -40,7 +40,7 @@ function Intro(){
     
     const pdf_icon = (
         <svg
-            className={`${timer4 ? 'fill-black dark:fill-white' : 'fill-transparent'} transition-all ease-in-out duration-1000`} 
+            className={`${timer4 ? 'fill-black dark:fill-white' : 'fill-transparent'} hover:scale-150 transition-all ease-in-out duration-300`} 
             height="1em"
             viewBox="0 0 482.14 482.14"
             >
@@ -127,7 +127,7 @@ function Intro(){
                 </span>
             </p>
 
-            <p className={`flex`}>
+            <div className={`flex`}>
                 <div className="group h-10">
                     <div className="intro-icon">
                         <a href="https://github.com/abhawsar10" className="flex items-center justify-center h-full w-full" target="_blank">
@@ -168,7 +168,7 @@ function Intro(){
                         Resume
                     </div>
                 </div>
-            </p>
+            </div>
             <div className={`opacity-${timer5} transition-opacity ease-in-out duration-1000`}>
                 <div className="absolute bottom-16 mb-16 text-2xl md:text-xl animate-bounce cursor-pointer">
                     <Link to="timelinesh" activeClass="active" spy={true} smooth={true} >

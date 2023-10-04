@@ -8,13 +8,8 @@
         @apply 
             mx-5
             w-10 h-10
-            text-center
-            items-center
-            justify-center
-            text-3xl hover:text-5xl 
-            dark:text-white 
+            text-3xl
             cursor-pointer
-            transition-all duration-200 ease-linear;
             
     }
 

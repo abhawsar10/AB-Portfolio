@@ -43,8 +43,8 @@ function PortfolioItem({title,img_Url,stack, link,details,isExpanded,onClick}){
             <div className="w-full p-4">
                 <h3 className="text-lg md:text-xl dark:text-white mb-2 md:mb-3 font-semibold">{title}</h3>
                 <p className="flex flex-wrap gap-2 dark:text-white flex-row items-center justify-start text-xs md:text-sm">
-                    {stack.map(item=>(
-                        <span className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md">
+                    {stack.map((item, index) => (
+                        <span key={index} className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md">
                             {item}
                         </span>
                     ))}
@@ -54,8 +54,8 @@ function PortfolioItem({title,img_Url,stack, link,details,isExpanded,onClick}){
                         
                         <div className="my-2 text-base font-normal text-stone-500 dark:text-stone-400">
                             <ul className="list-disc mx-3 my-5 marker:text-stone-400 dark:marker:text-stone-600 text-justify">
-                                {details.map((bullet,index)=>(
-                                        <li key={index}>{bullet}<br/></li>
+                                {details.map((bullet, index) => (
+                                    <li key={index}>{bullet}<br/></li>
                                 ))}
                             </ul>
                         </div>
