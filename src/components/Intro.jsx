@@ -9,7 +9,6 @@ function Intro(){
     const [timer4, settimer4] = useState(false);
     const [timer5, settimer5] = useState(false);
 
-
     const gh = (
         <svg className={`${timer4 ? 'fill-black dark:fill-white' : 'fill-transparent'} hover:scale-150 transition-color ease-in-out duration-300`} 
             height="1em" 
@@ -105,9 +104,12 @@ function Intro(){
     return(
         <div className={`flex items-center justify-center flex-col text-center pt-20 pb-12 h-screen relative cursor-default`}>
 
-            <div className={`text-5xl md:text-7xl mb-1 md:mb-3 font-bold ${timer1 ? 'text-black dark:text-white' : 'text-transparent'} transition-all ease-in-out duration-1000 font-inter`}>
+            <animated.div className={`text-5xl md:text-7xl mb-1 md:mb-3 font-bold 
+                ${timer1 ? 'text-black dark:text-white' : 'text-transparent'} 
+                transition-all ease-in-out duration-1000 font-inter`}
+                >
                 Ankit Bhawsar
-            </div>
+            </animated.div>
 
             <p className={`text-base md:text-xl mb-3 font-medium ${timer2 ? 'text-black dark:text-stone-300' : 'text-transparent'} transition-all ease-in-out duration-1000`}>
                 Full Stack Software Developer
