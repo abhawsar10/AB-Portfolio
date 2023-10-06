@@ -104,12 +104,12 @@ function Intro(){
     return(
         <div className={`flex items-center justify-center flex-col text-center pt-20 pb-12 h-screen relative cursor-default`}>
 
-            <animated.div className={`text-5xl md:text-7xl mb-1 md:mb-3 font-bold 
+            <div className={`text-5xl md:text-7xl mb-1 md:mb-3 font-bold 
                 ${timer1 ? 'text-black dark:text-white' : 'text-transparent'} 
                 transition-all ease-in-out duration-1000 font-inter`}
                 >
                 Ankit Bhawsar
-            </animated.div>
+            </div>
 
             <p className={`text-base md:text-xl mb-3 font-medium ${timer2 ? 'text-black dark:text-stone-300' : 'text-transparent'} transition-all ease-in-out duration-1000`}>
                 Full Stack Software Developer
