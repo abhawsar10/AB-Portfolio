@@ -10,7 +10,7 @@ function Intro(){
     const [timer5, settimer5] = useState(false);
 
     const gh = (
-        <svg className={`${timer4 ? 'fill-black dark:fill-white' : 'fill-transparent'} hover:scale-150 transition-color ease-in-out duration-300`} 
+        <svg className={`${timer4 ? 'fill-black dark:fill-white' : 'fill-transparent'} transition-color ease-in-out duration-300`} 
             height="1em" 
             viewBox="0 0 496 512"
             >
@@ -19,7 +19,7 @@ function Intro(){
     );
 
     const linkedin = (
-        <svg className={`${timer4 ? 'fill-black dark:fill-white' : 'fill-transparent'} hover:scale-150 transition-all ease-in-out duration-300`} 
+        <svg className={`${timer4 ? 'fill-black dark:fill-white' : 'fill-transparent'} transition-all ease-in-out duration-300`} 
             height="1em" 
             viewBox="0 0 448 512"
             >
@@ -28,7 +28,7 @@ function Intro(){
     );
 
     const email = (
-        <svg className={`${timer4 ? 'fill-black dark:fill-white' : 'fill-transparent'} hover:scale-150 transition-all ease-in-out duration-300`} 
+        <svg className={`${timer4 ? 'fill-black dark:fill-white' : 'fill-transparent'} transition-all ease-in-out duration-300`} 
             height="1em" 
             viewBox="0 0 512 512"
             >
@@ -39,7 +39,7 @@ function Intro(){
     
     const pdf_icon = (
         <svg
-            className={`${timer4 ? 'fill-black dark:fill-white' : 'fill-transparent'} hover:scale-150 transition-all ease-in-out duration-300`} 
+            className={`${timer4 ? 'fill-black dark:fill-white' : 'fill-transparent'} transition-all ease-in-out duration-300`} 
             height="1em"
             viewBox="0 0 482.14 482.14"
             >
