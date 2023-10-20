@@ -162,7 +162,7 @@ function Intro(){
                 </div>
                 <div className="group h-10">
                     <div className="intro-icon ">
-                        <a href="./assets/Ankit_Bhawsar_CV_8_6__SDE_.pdf" download="Ankit_Bhawsar_CV.pdf" className="flex items-center justify-center h-full w-full" target="_blank">
+                        <a href="./assets/Ankit_Bhawsar_CV_8_7_1__SDE_.pdf" download="Ankit_Bhawsar_CV.pdf" className="flex items-center justify-center h-full w-full" target="_blank">
                             {pdf_icon}
                         </a>
                     </div>
