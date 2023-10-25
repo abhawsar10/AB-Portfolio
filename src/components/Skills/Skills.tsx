@@ -81,7 +81,7 @@ export default function Skills(){
 
     return (
         <>        
-            <div className="h-10"></div>
+            <div className="h-10" id="skillesh"></div>
             <div className="flex flex-col mt-6 mb-4 md:flex-row item-center ">
                 <div className="grid grid-cols-2 ml-52 flex-container" >
                     

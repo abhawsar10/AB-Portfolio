@@ -173,7 +173,7 @@ function Intro(){
             </div>
             <div className={`opacity-${timer5} transition-opacity ease-in-out duration-1000`}>
                 <div className="absolute bottom-16 mb-16 text-2xl md:text-xl animate-bounce cursor-pointer">
-                    <Link to="timelinesh" activeClass="active" spy={true} smooth={true} >
+                    <Link to="skillesh" activeClass="active" spy={true} smooth={true} >
                         {darrow}
                     </Link>
                 </div>
