@@ -106,7 +106,7 @@ function Intro(){
 
             <div className={`text-5xl md:text-7xl mb-1 md:mb-3 font-bold 
                 ${timer1 ? 'text-black dark:text-white' : 'text-transparent'} 
-                transition-all ease-in-out duration-1000 font-inter`}
+                transition-all ease-in-out duration-1000 font-kanit`}
                 >
                 Ankit Bhawsar
             </div>

@@ -9,7 +9,8 @@ export default {
       fontFamily:{
         inter: ['inter','serif'],
         YS: ['Young Serif','serif'],
-        pixelify: ['Pixelify Sans', 'sans-serif']
+        pixelify: ['Pixelify Sans', 'sans-serif'],
+        kanit: ['Kanit', 'sans-serif']
       }
 
 

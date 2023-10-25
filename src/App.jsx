@@ -5,6 +5,7 @@ import Contact from './components/Contact'
 import Timeline from './components/Timeline'
 import Footer from './components/Footer'
 import Intro from './components/Intro'
+import Skills from './components/Skills/Skills'
 
 
 function App() {
@@ -77,6 +78,7 @@ function App() {
       <div className='bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter '>
         <div className='max-w-5xl w-11/12 mx-auto'>
           <Intro/>
+		  <Skills/>
           <Timeline theme={theme}/>
           <Portfolio/>
           <Contact id="contactesh"/>
