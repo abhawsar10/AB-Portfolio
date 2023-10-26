@@ -44,5 +44,18 @@
     from, to { border-color: transparent }
     50% { border-color: orange; }
     }
+
+    @keyframes spinAnimation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .spin {
+        animation: spinAnimation 2s linear infinite;
+    }
     
 }
