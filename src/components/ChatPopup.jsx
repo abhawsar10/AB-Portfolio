@@ -137,7 +137,7 @@ async function sendUserMessageToAPI(userMessage,prev_messages) {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ user_msg: prompt })
+            body: JSON.stringify({ user_msg: prompt })   
         });
 
         if (response.ok) {
