@@ -76,15 +76,18 @@ function PortfolioItemModal({title,img_Url,stack, link,details,isExpanded,onClic
                     w-10/12 md:w-3/4 lg:w-1/2
                     outline-none">
 
-                        <div className="flex">
-                            <img 
-                                src ={img_Url} 
-                                alt="portfolio_item_image" 
-                                className="w-full h-56 object-cover px-6 pt-6"
-                            />
+                        <div className="pt-6 px-6 flex">
+                            <div>
+                                <h3 className="text-lg md:text-xl dark:text-white mb-2 md:mb-3 font-semibold">{title}</h3>
+                            </div>
+                            <div className="flex ml-auto justify-center items-center py-2 mb-0  rounded-md cursor-pointer h-10 w-10
+                                text-white dark:text-black
+                                bg-pink-500 dark:bg-yellow-500" 
+                                onClick={handleClose}>
+                                    <CancelOutlinedIcon/>
+                            </div>
                         </div>
-                        <div className="w-full p-6">
-                            <h3 className="text-lg md:text-xl dark:text-white mb-2 md:mb-3 font-semibold">{title}</h3>
+                        <div className="pt-1 px-6">
                             <p className="flex flex-wrap gap-2 dark:text-white flex-row items-center justify-start text-xs md:text-sm">
                                 {stack.map((item, index) => (
                                     <span key={index} className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md">
@@ -92,9 +95,15 @@ function PortfolioItemModal({title,img_Url,stack, link,details,isExpanded,onClic
                                     </span>
                                 ))}
                             </p>
-
-                            <div className="my-2 text-base font-normal text-stone-500 dark:text-stone-400">
-                                <ul className="list-disc mx-3 my-5 marker:text-stone-400 dark:marker:text-stone-600 text-justify">
+                        </div>
+                        <img 
+                            src ={img_Url} 
+                            alt="portfolio_item_image" 
+                            className="w-full h-56 object-cover px-6 pt-6"
+                        />
+                        <div className="w-full p-6">
+                            <div className=" text-base font-normal text-stone-500 dark:text-stone-400">
+                                <ul className="list-disc mx-3 mb-5 marker:text-stone-400 dark:marker:text-stone-600 text-justify">
                                     {details.map((bullet, index) => (
                                         <li key={index}>{bullet}<br/></li>
                                     ))}
@@ -102,19 +111,13 @@ function PortfolioItemModal({title,img_Url,stack, link,details,isExpanded,onClic
                             </div>
                             <div className="flex">
                                 <a href={link} target="_blank" className="flex-auto">
-                                    <div className="flex justify-center items-center px-1 py-2 mt-4 mr-2 mb-0 rounded-md font-bold text-white 
+                                    <div className="flex justify-center items-center px-1 py-2 mt-4  mb-0 rounded-md font-bold text-white 
                                         bg-gradient-to-r from-yellow-500 to-pink-500 
                                         transition-all duration-300 h-10
                                     ">
                                             {link_icon}
                                     </div>
                                 </a>
-                                <div className="flex justify-center items-center px-1 py-2 mt-4 mb-0  rounded-md cursor-pointer h-10 w-10
-                                    text-white dark:text-black
-                                    bg-pink-500 dark:bg-yellow-500" 
-                                    onClick={handleClose}>
-                                        <CancelOutlinedIcon/>
-                                </div>
                             </div>    
                         </div>
 
@@ -126,17 +129,6 @@ function PortfolioItemModal({title,img_Url,stack, link,details,isExpanded,onClic
         </>
     )
 }
-
-
-const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
-    bgcolor: 'background.paper',
-    p: 4,
-  };
 
 
 export default PortfolioItemModal;
