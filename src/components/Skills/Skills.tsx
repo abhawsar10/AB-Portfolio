@@ -136,14 +136,14 @@ export default function Skills(){
 
                 <div className="m-0 p-2">
                     <Tree name="Cloud" style={{fontWeight:'bold'}} defaultOpen>
-                        <Tree name="AWS" >
+                        <Tree name={<div><abbr title="Amazon Web Services" style={{ border: 'none', textDecoration: 'none' }}>AWS</abbr></div> }>
                             <Tree name={<div><abbr title="AWS Lambdas" style={{ border: 'none', textDecoration: 'none' }}>Lambda</abbr></div> } />
                             <Tree name={<div><abbr title="Elastic Beanstalk" style={{ border: 'none', textDecoration: 'none' }}>EB</abbr></div> } />
                             <Tree name={<div><abbr title="Elastic Cloud Compute" style={{ border: 'none', textDecoration: 'none' }}>EC2</abbr></div> } />
                             <Tree name={<div><abbr title="Simple Storage Service" style={{ border: 'none', textDecoration: 'none' }}>S3</abbr></div> } />
                             <Tree name={<div><abbr title="Relational Database Service" style={{ border: 'none', textDecoration: 'none' }}>RDS</abbr></div> } />
                         </Tree>
-                        <Tree name="GCP" >
+                        <Tree name={<div><abbr title="Google Cloud Platform" style={{ border: 'none', textDecoration: 'none' }}>GCP</abbr></div> } >
                             <Tree name="App Engine" />
                             <Tree name="Cloud Compute" />
                         </Tree>

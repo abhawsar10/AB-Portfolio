@@ -61,7 +61,7 @@ const ChatPopup = ({ onClose }) => {
 
   return (
     <>
-        <div className="fixed top-32 p-2 m-2 rounded-tl-xl rounded-bl-xl rounded-br-xl  z-50 bg-violet-300 dark:bg-orange-300
+        <div className="fixed top-36 p-2 m-2 rounded-tl-xl rounded-bl-xl rounded-br-xl  z-50 bg-violet-300 dark:bg-orange-300
              right-10 left-10 sm:right-24 sm:left-auto
              sm:w-1/2 md:max-w-md lg:max-w-sm"
         >
