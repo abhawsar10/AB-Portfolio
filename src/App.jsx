@@ -14,8 +14,8 @@ import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import Button from '@mui/material/Button';
 import Zoom from '@mui/material/Zoom';
 
-import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
 import QuestionAnswerOutlinedIcon from '@mui/icons-material/QuestionAnswerOutlined';
+import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 
@@ -48,18 +48,19 @@ function App() {
 		setShowChat(!showChat);
 	};
 	
-	
+
 	const MyTooltip = styled(({ className, mytheme, ...props }) => (
 		<Tooltip {...props} arrow classes={{ popper: className }} />
 	  ))(({mytheme }) => ({
 		[`& .${tooltipClasses.arrow}`]: {
-		  color: mytheme=== 'dark'? '#D1D1D1':'#616161',
+		  	color: mytheme=== 'dark'? '#D1D1D1':'#616161',
 		},
 		[`& .${tooltipClasses.tooltip}`]: {
-		  backgroundColor: mytheme=== 'dark'? '#D1D1D1':'#616161',
-		  color: mytheme=== 'dark'? '#616161':'#D1D1D1',
-		  fontSize: '0.75rem',
-		  fontWeight: 'bold',
+			backgroundColor: mytheme=== 'dark'? '#D1D1D1':'#616161',
+			color: mytheme=== 'dark'? '#616161':'#D1D1D1',
+			fontSize: '0.75rem',
+			fontWeight: 'bold',
+    		boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
 		},
 	  }));
 
