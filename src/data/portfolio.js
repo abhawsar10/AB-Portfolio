@@ -12,21 +12,20 @@ export default [
         title: 'BHAWS Flix Website',
         domain: 'Web Technologies',
         date: 'March 2021',
-        img_Url: './assets/portfolio.JPG',
-        stack: ['React + Vite','Tailwind','NodeJS'],
-        link: 'https://github.com/abhawsar10/AB-Portfolio',
-        // link: {"Link":'https://bhaws-flix.uw.r.appspot.com/',"Github":'https://github.com/abhawsar10/BHAWS-Flix-Website'},
-        details: ["Developed this portfolio website that you are currently viewing","Created  using React+Vite as a frontend framework with Tailwind as the CSS Library.","Displays information about me including experience, bio, education, projects.","Dark/Light Mode Functionality.","Created a chatbot that could interact with users in natural language, answering questions on my behalf as well as navigate the website."]
+        img_Url: './assets/bhaws.jpg',
+        stack: ['Angular','NodeJS','Express'],
+        link: 'https://bhaws-flix.uw.r.appspot.com/',
+        details: ["Developed a web application using Angular, Bootstrap, and HTML5 that showcases the latest movies and TV shows.","It allows users to watch trailers and receive recommendations based on their selected movies.","Utilized the TMDB API to fetch movie, TV, and actor data and integrated YouTube's API to display trailers.","Implemented a Watch-list feature using the Web Storage API, enabling users to manage their personal list of movies and TV shows.","Created the backend using ExpressJS and hosted the application on the Google Cloud platform."]
     },
     {
         title: 'Personal Portfolio Website',
         domain: 'Web Technologies',
         date: 'September 2023',
-        img_Url: './assets/bhaws.jpg',
-        stack: ['Angular','NodeJS','Express'],
-        link: 'https://bhaws-flix.uw.r.appspot.com/',
+        img_Url: './assets/porty.JPG',
+        stack: ['React + Vite','Tailwind','NodeJS'],
+        link: 'https://github.com/abhawsar10/AB-Portfolio',
         // link: {"Link":'https://bhaws-flix.uw.r.appspot.com/',"Github":'https://github.com/abhawsar10/BHAWS-Flix-Website'},
-        details: ["Developed a web application using Angular, Bootstrap, and HTML5 that showcases the latest movies and TV shows.","It allows users to watch trailers and receive recommendations based on their selected movies.","Utilized the TMDB API to fetch movie, TV, and actor data and integrated YouTube's API to display trailers.","Implemented a Watch-list feature using the Web Storage API, enabling users to manage their personal list of movies and TV shows.","Created the backend using ExpressJS and hosted the application on the Google Cloud platform."]
+        details: ["Developed this portfolio website that you are currently viewing","Created  using React+Vite as a frontend framework with Tailwind as the CSS Library.","Displays information about me including experience, bio, education, projects.","Dark/Light Mode Functionality.","Created a chatbot that can interact with users in natural language, answering questions on my behalf as well as navigate the website."]
     },
     {
         title: 'Transit Route Optimization using Uber/Lyft Data',
