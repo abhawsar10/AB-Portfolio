@@ -12,6 +12,16 @@ export default [
         title: 'BHAWS Flix Website',
         domain: 'Web Technologies',
         date: 'March 2021',
+        img_Url: './assets/portfolio.JPG',
+        stack: ['React + Vite','Tailwind','NodeJS'],
+        link: 'https://github.com/abhawsar10/AB-Portfolio',
+        // link: {"Link":'https://bhaws-flix.uw.r.appspot.com/',"Github":'https://github.com/abhawsar10/BHAWS-Flix-Website'},
+        details: ["Developed this portfolio website that you are currently viewing","Created  using React+Vite as a frontend framework with Tailwind as the CSS Library.","Displays information about me including experience, bio, education, projects.","Dark/Light Mode Functionality.","Created a chatbot that could interact with users in natural language, answering questions on my behalf as well as navigate the website."]
+    },
+    {
+        title: 'Personal Portfolio Website',
+        domain: 'Web Technologies',
+        date: 'September 2023',
         img_Url: './assets/bhaws.jpg',
         stack: ['Angular','NodeJS','Express'],
         link: 'https://bhaws-flix.uw.r.appspot.com/',
