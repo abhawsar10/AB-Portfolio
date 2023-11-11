@@ -34,6 +34,7 @@ function Portfolio(){
                         title={project.title}
                         stack={project.stack}
                         link={project.link}
+                        link2={project.link2}
                         details={project.details}
                         isExpanded={expandedItem === index}
                         onClick={() => toggleExpanded(index)}
