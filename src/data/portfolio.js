@@ -14,7 +14,7 @@ export default [
         date: 'March 2021',
         img_Url: './assets/bhaws.jpg',
         stack: ['Angular','NodeJS','Express'],
-        link: 'https://bhaws-flix.uw.r.appspot.com/',
+        link: 'https://github.com/abhawsar10/BHAWS-Flix-Website',
         link2: 'https://bhaws-flix.uw.r.appspot.com/',
         details: ["Developed a web application using Angular, Bootstrap, and HTML5 that showcases the latest movies and TV shows.","It allows users to watch trailers and receive recommendations based on their selected movies.","Utilized the TMDB API to fetch movie, TV, and actor data and integrated YouTube's API to display trailers.","Implemented a Watch-list feature using the Web Storage API, enabling users to manage their personal list of movies and TV shows.","Created the backend using ExpressJS and hosted the application on the Google Cloud platform."]
     },
