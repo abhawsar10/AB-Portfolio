@@ -22,6 +22,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scroll": "^1.8.9",
+    "react-spring": "^9.7.3",
     "react-svg": "^16.1.33",
     "react-use-measure": "^2.1.1",
     "styled-components": "^6.1.0"

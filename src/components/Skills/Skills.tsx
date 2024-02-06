@@ -102,8 +102,26 @@ export default function Skills(){
                     </Tree>
                 </div>
                     
+                <div className="m-0 p-2">
+                    <Tree name="Frameworks" style={{fontWeight:'bold'}} defaultOpen>
+                        <Tree name="Front-end" defaultOpen>
+                            <Tree name="React" />
+                            <Tree name="Angular" />
+                            <Tree name="Bootstrap" />
+                            <Tree name="Android SDK" />
+                            <Tree name="Tailwind" />    
+                            <Tree name="React-Spring" />    
+                        </Tree>
+                        <Tree name="Back-end" defaultOpen> 
+                            <Tree name="Django" />
+                            <Tree name="Node.JS" />
+                            <Tree name="ExpressJS" />
+                            <Tree name="Flask"/>
+                        </Tree>
+                    </Tree>
+                </div>
 
-                
+{/*                 
                 <div className="m-0 p-2">
                     <Tree name="Frameworks" style={{fontWeight:'bold'}} defaultOpen>
                         <Tree name="Django" />
@@ -117,7 +135,7 @@ export default function Skills(){
                         <Tree name="Tailwind" />
                     </Tree>
                 </div>
-
+ */}
 
                 
                 <div className="m-0 p-2">

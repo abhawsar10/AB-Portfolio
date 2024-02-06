@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from "react";
 import { Link } from "react-scroll";
 import { ReactSVG } from "react-svg";
+import { useSpring, animated } from "react-spring";
 
 function Intro(){
 
@@ -100,12 +101,64 @@ function Intro(){
 
     }, []);
 
+    // const [logostyle,logospinapi] = useSpring(() => ({
+    //     from: { opacity: 1 },
+    // }))
 
+    // const handlelogoclick = () => {
+    //     logospinapi.start({
+    //         to: [
+    //             { opacity: 0 },
+    //             { opacity: 1 },
+    //         ],
+    //         config: { duration: "1500" },
+    //         loop:true
+    //     })
+    // }
+
+
+    const [flipped, setflipped] = useState(false)
+
+    const { transform, opacity } = useSpring({
+        opacity: flipped ? 1 : 0,
+        transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
+        config: { mass: 5, tension: 500, friction: 80 },
+    })
 
     return(
         <div className={`flex items-center justify-center flex-col text-center pt-20 pb-12 h-screen relative cursor-default`}>
             
-            <ReactSVG src="/logos/logo.svg" />
+            <div onClick={() => setflipped(state => !state)} className="flex item-center mb-10 h-32 justify-center">
+
+                <animated.div
+                    className="absolute w-32 h-32"
+                    style={{ 
+                        opacity: opacity.to(o => 1 - o), 
+                        transform,
+                        backgroundImage: "url('https://ankitbhawsar.com/logos/logo2.svg')",
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                    }}
+                />
+                
+                <animated.div
+                    className="absolute w-32 h-32"
+                    style={{
+                        opacity,
+                        transform,
+                        rotateX: '180deg',
+                        backgroundImage: "url('https://ankitbhawsar.com/logos/logo.svg')",
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                    }}
+                />
+            </div>
+
+{/*             
+            <animated.div style={logostyle} className="rounded-full">
+                <img className="h-32 w-32 mb-10" src="https://ankitbhawsar.com/logos/logo.svg" />
+            </animated.div> */}
+                
 
             <div className={`text-5xl md:text-7xl mb-1 md:mb-3 font-bold 
                 ${timer1 ? 'text-black dark:text-white' : 'text-transparent'} 
