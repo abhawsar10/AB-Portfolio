@@ -1,5 +1,4 @@
 import React,{useEffect,useState, useRef} from 'react'
-import viteLogo from '/vite.svg'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import Timeline from './components/Timeline'
