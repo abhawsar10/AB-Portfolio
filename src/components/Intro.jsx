@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from "react";
 import { Link } from "react-scroll";
+import logo from '../../public/anblogo1.svg'
 
 function Intro(){
 
@@ -103,7 +104,7 @@ function Intro(){
 
     return(
         <div className={`flex items-center justify-center flex-col text-center pt-20 pb-12 h-screen relative cursor-default`}>
-
+            
             <div className={`text-5xl md:text-7xl mb-1 md:mb-3 font-bold 
                 ${timer1 ? 'text-black dark:text-white' : 'text-transparent'} 
                 transition-all ease-in-out duration-1000 font-kanit`}
@@ -162,7 +163,7 @@ function Intro(){
                 </div>
                 <div className="group h-10">
                     <div className="intro-icon ">
-                        <a href="./assets/Ankit_Bhawsar_CV_8_7_1__SDE_.pdf" download="Ankit_Bhawsar_CV.pdf" className="flex items-center justify-center h-full w-full" target="_blank">
+                        <a href="./assets/Ankit_Bhawsar_CV_9_1__SDE_.pdf" download="Ankit_Bhawsar_CV.pdf" className="flex items-center justify-center h-full w-full" target="_blank">
                             {pdf_icon}
                         </a>
                     </div>
