@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React,{useState,useEffect,useRef} from "react";
 import { Link } from "react-scroll";
 import { ReactSVG } from "react-svg";
 import { useSpring, animated } from "react-spring";
@@ -101,64 +101,87 @@ function Intro(){
 
     }, []);
 
-    // const [logostyle,logospinapi] = useSpring(() => ({
-    //     from: { opacity: 1 },
-    // }))
-
-    // const handlelogoclick = () => {
-    //     logospinapi.start({
-    //         to: [
-    //             { opacity: 0 },
-    //             { opacity: 1 },
-    //         ],
-    //         config: { duration: "1500" },
-    //         loop:true
-    //     })
-    // }
-
-
     const [flipped, setflipped] = useState(false)
 
     const { transform, opacity } = useSpring({
         opacity: flipped ? 1 : 0,
-        transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
+        transform: `perspective(1000px) rotateY(${flipped ? 180 : 360}deg)`,
         config: { mass: 5, tension: 500, friction: 80 },
     })
 
+    const spincoin = (duration) => {
+        let flips = Math.ceil(duration / 100); // Calculate the number of flips based on the duration
+        // console.log("Duration:",duration,"; Flips:",flips)
+        
+        if(flips%2==0){
+            flips+=1;
+        }
+
+        if(isNaN(flips)){
+            setflipped(flipped => !flipped);
+            return
+        }
+
+        let i = 0;
+        let intervalDuration = 200; 
+        const intervalId = setInterval(() => {
+            if (i >= flips) {
+                clearInterval(intervalId);
+                return;
+            }
+            setflipped(flipped => !flipped);
+
+            i += 1;
+            intervalDuration += 200;
+            console.log(intervalDuration)
+        }, intervalDuration);
+    }
+
+    
+    let startTime;
+
+    const handleMouseDown = () => {
+        startTime = Date.now(); 
+    };
+
+    const handleMouseUp = () => {
+        const duration = Date.now() - startTime; 
+        spincoin(duration);
+    };
+
     return(
         <div className={`flex items-center justify-center flex-col text-center pt-20 pb-12 h-screen relative cursor-default`}>
-            
-            <div onClick={() => setflipped(state => !state)} className="flex item-center mb-10 h-32 justify-center">
+
+            <div onMouseDown={handleMouseDown} onMouseUp={handleMouseUp} 
+                className={`flex item-center -mt-20 mb-10 h-20 justify-center cursor-pointer
+                ${timer1 ? 'opacity-100' : 'opacity-0'} transition-all ease-in-out duration-1000`} 
+                title="Click Me!"
+            >
 
                 <animated.div
-                    className="absolute w-32 h-32"
+                    className="absolute w-20 h-20"
                     style={{ 
                         opacity: opacity.to(o => 1 - o), 
                         transform,
-                        backgroundImage: "url('https://ankitbhawsar.com/logos/logo2.svg')",
+                        backgroundImage: "url('https://ankitbhawsar.com/logos/logo.svg')",
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                     }}
                 />
                 
                 <animated.div
-                    className="absolute w-32 h-32"
+                    className="absolute w-20 h-20"
                     style={{
                         opacity,
                         transform,
-                        rotateX: '180deg',
-                        backgroundImage: "url('https://ankitbhawsar.com/logos/logo.svg')",
+                        rotateY: '180deg',
+                        backgroundImage: "url('https://ankitbhawsar.com/logos/logo2.svg')",
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                     }}
                 />
             </div>
 
-{/*             
-            <animated.div style={logostyle} className="rounded-full">
-                <img className="h-32 w-32 mb-10" src="https://ankitbhawsar.com/logos/logo.svg" />
-            </animated.div> */}
-                
 
             <div className={`text-5xl md:text-7xl mb-1 md:mb-3 font-bold 
                 ${timer1 ? 'text-black dark:text-white' : 'text-transparent'} 
