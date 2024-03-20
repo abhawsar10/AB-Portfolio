@@ -164,12 +164,6 @@ function Intro(){
     return(
         <div className={`flex items-center justify-center flex-col text-center pt-20 pb-12 h-screen relative cursor-default`}>
 
-            
-            <form className="mb-20" onSubmit={handlesubmit}>
-                <input type="text" value={name} onChange={(e)=> setName(e.target.value)}></input>
-                <button type="submit">submit</button>
-            </form>
-{/* 
             <div onMouseDown={handleMouseDown} onMouseUp={handleMouseUp} 
                 className={`flex item-center -mt-20 mb-10 h-20 justify-center cursor-pointer
                 ${timer1 ? 'opacity-100' : 'opacity-0'} transition-all ease-in-out duration-1000`} 
@@ -198,7 +192,7 @@ function Intro(){
                         backgroundPosition: 'center',
                     }}
                 />
-            </div> */}
+            </div>
 
 
             <div className={`text-5xl md:text-7xl mb-1 md:mb-3 font-bold 
