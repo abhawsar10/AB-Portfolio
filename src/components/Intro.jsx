@@ -1,3 +1,6 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable no-unused-vars */
 import React,{useState,useEffect,useRef} from "react";
 import { Link } from "react-scroll";
 import { ReactSVG } from "react-svg";
@@ -253,7 +256,7 @@ function Intro(){
                 </div>
                 <div className="group h-10">
                     <div className="intro-icon ">
-                        <a href="./assets/Ankit_Bhawsar_CV_9_2_1__SDE_.pdf" download="Ankit_Bhawsar_CV.pdf" className="flex items-center justify-center h-full w-full" target="_blank">
+                        <a href="./assets/Ankit_Bhawsar_CV_9_3_1__SDE_.pdf" download="Ankit_Bhawsar_CV.pdf" className="flex items-center justify-center h-full w-full" target="_blank">
                             {pdf_icon}
                         </a>
                     </div>
