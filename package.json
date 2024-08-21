@@ -18,6 +18,7 @@
     "@mui/icons-material": "^5.14.16",
     "@mui/material": "^5.14.17",
     "@react-spring/web": "^9.7.3",
+    "anb-portfolio": "file:",
     "babel-plugin-macros": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

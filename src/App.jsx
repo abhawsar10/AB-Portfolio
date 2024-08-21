@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React,{useEffect,useState, useRef} from 'react'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
@@ -50,20 +51,20 @@ function App() {
 
 	const MyTooltip = styled(({ className, mytheme, ...props }) => (
 		<Tooltip {...props} arrow classes={{ popper: className }} />
-	  ))(({mytheme }) => ({
+	))(({mytheme }) => ({
 		[`& .${tooltipClasses.arrow}`]: {
-		  	color: mytheme=== 'dark'? '#D1D1D1':'#616161',
+			color: mytheme=== 'dark'? '#D1D1D1':'#616161',
 		},
 		[`& .${tooltipClasses.tooltip}`]: {
 			backgroundColor: mytheme=== 'dark'? '#D1D1D1':'#616161',
 			color: mytheme=== 'dark'? '#616161':'#D1D1D1',
 			fontSize: '0.75rem',
 			fontWeight: 'bold',
-    		boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+			boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
 		},
-	  }));
+	}));
 
-  	return (
+	return (
     <>
 			<div className='fixed right-20 top-4 m-2 z-10 rounded-md bg-violet-300 dark:bg-orange-300' 
 				onClick={handleThemeSwitch}>

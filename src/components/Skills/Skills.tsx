@@ -95,10 +95,8 @@ export default function Skills(){
                         <Tree name="Python" />
                         <Tree name="JavaScript" />
                         <Tree name="TypeScript" />
-                        <Tree name="Java" />
-                        <Tree name="R" />
-                        <Tree name="C++" />
-                        <Tree name="Java" />
+                        <Tree name="Dart" />
+                        <Tree name="SQL" />
                     </Tree>
                 </div>
                     
@@ -108,34 +106,22 @@ export default function Skills(){
                             <Tree name="React" />
                             <Tree name="Angular" />
                             <Tree name="Bootstrap" />
-                            <Tree name="Android SDK" />
                             <Tree name="Tailwind" />    
                             <Tree name="React-Spring" />    
                         </Tree>
                         <Tree name="Back-end" defaultOpen> 
                             <Tree name="Django" />
-                            <Tree name="Node.JS" />
+                            <Tree name="NodeJS" />
                             <Tree name="ExpressJS" />
                             <Tree name="Flask"/>
                         </Tree>
+                        <Tree name="Mobile"> 
+                            <Tree name="Android SDK" />
+                            <Tree name="React-Native" />
+                        </Tree>
+                        
                     </Tree>
                 </div>
-
-{/*                 
-                <div className="m-0 p-2">
-                    <Tree name="Frameworks" style={{fontWeight:'bold'}} defaultOpen>
-                        <Tree name="Django" />
-                        <Tree name="React" />
-                        <Tree name="Node.JS" />
-                        <Tree name="Angular" />
-                        <Tree name="ExpressJS" />
-                        <Tree name="Bootstrap" />
-                        <Tree name="Android SDK" />
-                        <Tree name="Flask"/>
-                        <Tree name="Tailwind" />
-                    </Tree>
-                </div>
- */}
 
                 
                 <div className="m-0 p-2">
@@ -156,14 +142,21 @@ export default function Skills(){
                     <Tree name="Cloud" style={{fontWeight:'bold'}} defaultOpen>
                         <Tree name={<div><abbr title="Amazon Web Services" style={{ border: 'none', textDecoration: 'none' }}>AWS</abbr></div> }>
                             <Tree name={<div><abbr title="AWS Lambdas" style={{ border: 'none', textDecoration: 'none' }}>Lambda</abbr></div> } />
-                            <Tree name={<div><abbr title="Elastic Beanstalk" style={{ border: 'none', textDecoration: 'none' }}>EB</abbr></div> } />
                             <Tree name={<div><abbr title="Elastic Cloud Compute" style={{ border: 'none', textDecoration: 'none' }}>EC2</abbr></div> } />
+                            <Tree name={<div><abbr title="Elastic Container Service" style={{ border: 'none', textDecoration: 'none' }}>ECS</abbr></div> } />
+                            <Tree name={<div><abbr title="Elastic Beanstalk" style={{ border: 'none', textDecoration: 'none' }}>EB</abbr></div> } />
                             <Tree name={<div><abbr title="Simple Storage Service" style={{ border: 'none', textDecoration: 'none' }}>S3</abbr></div> } />
                             <Tree name={<div><abbr title="Relational Database Service" style={{ border: 'none', textDecoration: 'none' }}>RDS</abbr></div> } />
                         </Tree>
                         <Tree name={<div><abbr title="Google Cloud Platform" style={{ border: 'none', textDecoration: 'none' }}>GCP</abbr></div> } >
                             <Tree name="App Engine" />
                             <Tree name="Cloud Compute" />
+                        </Tree>
+                        <Tree name={<div><abbr title="Firebase" style={{ border: 'none', textDecoration: 'none' }}>Firebase</abbr></div> }>
+                            <Tree name={<div><abbr title="AWS Lambdas" style={{ border: 'none', textDecoration: 'none' }}>Lambda</abbr></div> } />
+                            <Tree name="Authentication" />
+                            <Tree name="Firestore" />
+                            <Tree name="Storage API" />
                         </Tree>
                     </Tree> 
                 </div>

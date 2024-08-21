@@ -6,6 +6,7 @@ export default [
         img_Url: './assets/chatbot.JPG',
         stack: ['LLM','JavaScript','OpenAI API'],
         link: 'https://github.com/abhawsar10/Bhaws-Chatbot-Extension',
+        link2: './assets/AI Chatbot Companion for saatva.com.mp4',
         details: ["Developed a Chrome extension for Saatva.com, enhancing user experience and simplifying e-commerce interactions.","Integrated OpenAI's Language Model API to enable natural language queries, commands, and real-time content scraping for up-to-date product information.","Designed and implemented the extension's architecture, combining content scripts and a Node.js backend to ensure optimal performance and responsiveness."]
     },
     {
