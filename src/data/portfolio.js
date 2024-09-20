@@ -1,5 +1,20 @@
 export default [
     {
+        title: 'BHAWS Workout Tracking App',
+        domain: 'App Developement',
+        date: 'June 2024',
+        img_Url: './assets/Bhaws Workouts SS 1.jpeg',
+        stack: ['Flutter','Dart','Firebase'],
+        link: 'https://github.com/abhawsar10/bhaws-workouts',
+        details: [
+            "Engineered a comprehensive workout tracking application that seamlessly records and manages exercises, sets, and repetitions across all user workouts.",
+            "Implemented advanced analytics features, leveraging historical workout data to provide valuable insights including Set progression visualization, Personal record (PR) tracking and notifications, and Maximum repetition analysis for each exercise",
+            "Utilized the Flutter SDK to ensure a consistent and responsive user experience across iOS, Android, and Web portals.",
+            "Prioritized data security by implementing 256-bit encryption for all user information storage in Firestore database",
+            "Implemented secure user authentication using Firebase Authentication, enabling email/password login, social media sign-in options, and robust account management features."
+        ]
+    },
+    {
         title: 'Natural Language AI Companion Chrome Extension',
         domain: 'LLM',
         date: 'October 2023',
@@ -7,7 +22,11 @@ export default [
         stack: ['LLM','JavaScript','OpenAI API'],
         link: 'https://github.com/abhawsar10/Bhaws-Chatbot-Extension',
         link2: './assets/AI Chatbot Companion for saatva.com.mp4',
-        details: ["Developed a Chrome extension for Saatva.com, enhancing user experience and simplifying e-commerce interactions.","Integrated OpenAI's Language Model API to enable natural language queries, commands, and real-time content scraping for up-to-date product information.","Designed and implemented the extension's architecture, combining content scripts and a Node.js backend to ensure optimal performance and responsiveness."]
+        details: [
+            "Developed a Chrome extension for Saatva.com, enhancing user experience and simplifying e-commerce interactions.",
+            "Integrated OpenAI's Language Model API to enable natural language queries, commands, and real-time content scraping for up-to-date product information.",
+            "Designed and implemented the extension's architecture, combining content scripts and a Node.js backend to ensure optimal performance and responsiveness."
+        ]
     },
     {
         title: 'BHAWS Flix Website',
