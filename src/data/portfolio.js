@@ -5,7 +5,8 @@ export default [
         date: 'June 2024',
         img_Url: './assets/Bhaws Workouts SS 1.jpeg',
         stack: ['Flutter','Dart','Firebase'],
-        link: 'https://github.com/abhawsar10/bhaws-workouts',
+        // link: 'https://github.com/abhawsar10/bhaws-workouts',
+        link2: './assets/bhaws-workouts.apk',
         details: [
             "Engineered a comprehensive workout tracking application that seamlessly records and manages exercises, sets, and repetitions across all user workouts.",
             "Implemented advanced analytics features, leveraging historical workout data to provide valuable insights including Set progression visualization, Personal record (PR) tracking and notifications, and Maximum repetition analysis for each exercise",

@@ -119,15 +119,15 @@ function PortfolioItemModal({title,img_Url,stack, link,link2,details,isExpanded,
                                 </ul>
                             </div>
                             <div className="flex flex-wrap gap-2">
-                                <a href={link} target="_blank" className="flex-auto">
+                                { link && <a href={link} target="_blank" className="flex-auto" rel="noreferrer">
                                     <div className="flex justify-center items-center px-1 py-2 mt-4  mb-0 rounded-md font-bold text-white 
                                         bg-gradient-to-r from-yellow-500 to-pink-500 
                                         transition-all duration-300 h-10
                                     ">
                                             {gh}
                                     </div>
-                                </a>
-                                { link2 && <a href={link2} target="_blank" className="flex-auto">
+                                </a>}
+                                { link2 && <a href={link2} target="_blank" className="flex-auto" rel="noreferrer">
                                     <div className="flex justify-center items-center px-1 py-2 mt-4  mb-0 rounded-md font-bold text-white 
                                         bg-gradient-to-r from-yellow-500 to-blue-500 
                                         transition-all duration-300 h-10
